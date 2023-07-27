@@ -4,7 +4,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/bg_editor_2.png");
+  background-image: url("/assets/bgeditor2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
