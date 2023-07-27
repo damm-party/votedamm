@@ -38,7 +38,7 @@ $(document).ready(function() {
         for (var i = 0; i < carousel1Items.length; i++) {
             var item = carousel1Items[i];
             var carouselItem = $("<div class='carousel-item'></div>");
-            var image = $("<img>").attr("src", "votedamm/assets/icons/" + type + "/" + item +"/"+item+"1"+ ".png");
+            var image = $("<img>").attr("src", "assets/icons/" + type + "/" + item +"/"+item+"1"+ ".png");
             carouselItem.append(image);
             $("#carousel1").append(carouselItem);
         }
