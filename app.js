@@ -38,7 +38,7 @@ $(document).ready(function() {
         for (var i = 0; i < carousel1Items.length; i++) {
             var item = carousel1Items[i];
             var carouselItem = $("<div class='carousel-item'></div>");
-            var image = $("<img>").attr("src", "/assets/icons/" + type + "/" + item +"/"+item+"1"+ ".png");
+            var image = $("<img>").attr("src", "assets/icons/" + type + "/" + item +"/"+item+"1"+ ".png");
             carouselItem.append(image);
             $("#carousel1").append(carouselItem);
         }
@@ -55,11 +55,11 @@ $(document).ready(function() {
      updateCarousel1("self");
   
      var carousel2DataNum = {
-        "/assets/icons/self/eyes/eyes1.png": 5,
-        "/assets/icons/self/nose/nose1.png": 3,
-        "/assets/icons/self/ears/ears1.png": 3,
-        "/assets/icons/self/mouth/mouth1.png": 4,
-        "/assets/icons/gear/clothes/clothes1.png":3
+        "assets/icons/self/eyes/eyes1.png": 5,
+        "assets/icons/self/nose/nose1.png": 3,
+        "assets/icons/self/ears/ears1.png": 3,
+        "assets/icons/self/mouth/mouth1.png": 4,
+        "assets/icons/gear/clothes/clothes1.png":3
       };
       
       function updateCarousel2(selectedItem) {
@@ -126,7 +126,7 @@ $(document).ready(function() {
         var selectedItem = $(this).find("img").attr("src");
         console.log("avatar console log");
         console.log(selectedItem);
-        var updatedString = selectedItem.replace("/assets/icons/", "/assets/");
+        var updatedString = selectedItem.replace("assets/icons/", "assets/");
         console.log(updatedString)
         updateAvatar(updatedString);
       });
