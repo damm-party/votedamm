@@ -271,9 +271,10 @@ function updateProgressBar() {
 }
 // Update the progress text
 function updateProgressText() {
-  var progressText = (currentQuestionIndex + 1) + "/" + myQuestions.length;
-  progressElement.textContent = progressText;
+  var progressTextValue = (currentQuestionIndex + 1) + "/" + myQuestions.length;
+  progressText.textContent = progressTextValue;
 }
+
 
 prevButton.addEventListener("click", function () {
   currentQuestionIndex--;
