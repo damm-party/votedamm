@@ -22,7 +22,7 @@ var myQuestions = [
 
 var myQuestions = [
   {
-    question: "When faced with a challenging situation, how do you typically respond?",
+    question: "How do you handle challenges?",
     choices: [
       { option: "Remain calm and composed, seeking a solution", keyTrait: "serenitySeeker" },
       { option: "Crack jokes to lighten the mood and reduce tension", keyTrait: "timeWarpDancer" },
