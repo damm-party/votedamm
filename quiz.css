@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family:'Comics', san-serif;
 }
 
 .background {
@@ -83,6 +84,7 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family:'Comics', san-serif;
 }
 
 .choice:hover {
