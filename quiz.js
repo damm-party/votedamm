@@ -148,6 +148,7 @@ const characteristics = {
 };
 
 
+
 // Function to calculate the total score for each characteristic
 // Function to calculate the total score for each characteristic
 function calculateCharacteristicsScore(answers) {
@@ -220,6 +221,8 @@ submitButton.addEventListener("click", function () {
     console.log("Your dominant characteristic is:", result);
   } else {
     alert("Please answer all the questions before submitting.");
+    console.log("pasa;dlfkaslfkd");
+    showSubmitAlert("Some questions haven't been answered yet.");
   }
 });
 
@@ -265,6 +268,12 @@ function handleChoiceClick(event) {
   showQuestion();
 }
 */
+function showSubmitAlert(message) {
+  const alertMessageElement = document.getElementById('alert-message');
+  alertMessageElement.textContent = message;
+  console.log("fuck u");
+}
+
 function updateProgressBar() {
   progressPercent = ((currentQuestionIndex + 1) / myQuestions.length) * 100;
   progressElement.style.width = progressPercent + "%";
@@ -287,6 +296,10 @@ nextButton.addEventListener("click", function () {
 });
 
 
+submitButton.addEventListener("click", function () {
+  currentQuestionIndex++;
+  redirectToFinalResultPage() ;
+});
 
 
 function redirectToResultPage() {
@@ -294,6 +307,26 @@ function redirectToResultPage() {
   console.log("redirecting to result.html");
 }
 
+function redirectToFinalResultPage() {
+  const dominantCharacteristicName = calculateCharacteristicsScore(userAnswers);
+  localStorage.setItem('dominantCharacteristic', dominantCharacteristicName);
+
+  // Redirect to the final result page
+  window.location.href = 'finalresult.html';
+}
+
+/*
+
+function redirectToFinalResultPage() {
+  window.location.href = 'finalresult.html';
+  console.log("redirecting to finalresult.html");
+  //to send the packed information to the other page
+  const dominantCharacteristicName = calculateCharacteristicsScore(userAnswers);
+  const url = `finalresult.html?dominantCharacteristic=${dominantCharacteristicName}`;
+  window.location.href = url;
+  console.log("redirecting to finalresult.html");
+}
+*/
 
 showQuestion();
 

@@ -7,6 +7,11 @@ body {
     height: 100vh;
     font-family:'Comics', san-serif;
 }
+.alert-message {
+    color: black;
+    font-family: 'Comics', sans-serif;
+    /* Add other styles as needed */
+}
 
 .background {
     width: 100%;
@@ -85,6 +90,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     font-family:'Comics', san-serif;
+    text-transform: lowercase; 
 }
 
 .choice:hover {
