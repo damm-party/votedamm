@@ -134,6 +134,10 @@ header {
   background-color: #FAFAFA;
   border-radius: 10px;
 }
+.carousel-item.selected {
+  border: 2px solid #007BFF; /* Add a border to indicate selection */
+  background-color: #E0E0E0; /* Change background color for selected item */
+}
 
 .carousel-item:not(:first-child) {
   border-left: 1px solid white;
@@ -178,23 +182,13 @@ header {
 }
 
 
-#carousel2.carousel::-webkit-scrollbar {
-  height: 8px;
-}
-
-#carousel2.carousel::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 8px;
-}
-
-#carousel2.carousel::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 8px;
-}
-
 #carousel2 .carousel-container {
+  display: flex; /* Use flexbox to center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  white-space: nowrap;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
 }
 .carousel-item img {
   max-width: 100%;
@@ -204,6 +198,7 @@ header {
   height: auto;
 }
 
+/*
 .carousel2-bounce-enter {
   animation-name: carousel2BounceEnter;
   animation-duration: 0.5s;
@@ -219,3 +214,4 @@ header {
     transform: scale(1);
   }
 }
+/*

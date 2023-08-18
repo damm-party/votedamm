@@ -55,9 +55,9 @@ $(document).ready(function() {
      updateCarousel1("self");
   
      var carousel2DataNum = {
-        "assets/icons/self/eyes/eyes1.png": 5,
+        "assets/icons/self/eyes/eyes1.png": 6,
         "assets/icons/self/nose/nose1.png": 3,
-        "assets/icons/self/ears/ears1.png": 3,
+        "assets/icons/self/ears/ears1.png": 10,
         "assets/icons/self/mouth/mouth1.png": 4,
         "assets/icons/gear/clothes/clothes1.png":3
       };
