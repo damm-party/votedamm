@@ -60,7 +60,7 @@ $(document).ready(function() {
      var carousel2DataNum = {
         "assets/icons/self/eyes/eyes1.png": 6,
         "assets/icons/self/nose/nose1.png": 3,
-        "assets/icons/self/ears/ears1.png": 6,
+        "assets/icons/self/ears/ears1.png": 12,
         "assets/icons/self/mouth/mouth1.png": 4,
         "assets/icons/gear/clothes/clothes1.png":3
       };
@@ -142,23 +142,37 @@ $(document).ready(function() {
   });
 
   /*RESULT PAGE JAVAJAVAJAVA*/
-  function redirectToResultPage() {
-    // Get the selected items
-    var eyes = $('#eyes-image').attr('src');
-    var ears = $('#ears-image').attr('src');
-    var nose = $('#nose-image').attr('src');
-    var mouth = $('#mouth-image').attr('src');
-  
-    // Construct the URL with query parameters
-    var url = 'result.html';
-    url += '?eyes=' + encodeURIComponent(eyes);
-    url += '&ears=' + encodeURIComponent(ears);
-    url += '&nose=' + encodeURIComponent(nose);
-    url += '&mouth=' + encodeURIComponent(mouth);
-  
-    // Redirect to the result page
-    window.location.href = url;
-  }
+  /*RESULT PAGE JAVAJAVAJAVA*/
+function redirectToResultPage() {
+  // Get the selected items
+  var eyes = $('#eyes-image').attr('src');
+  var ears = $('#ears-image').attr('src');
+  var nose = $('#nose-image').attr('src');
+  var mouth = $('#mouth-image').attr('src');
+
+  // Store the selected avatar details in local storage
+  var avatarDetails = JSON.stringify({
+    eyes: eyes,
+    ears: ears,
+    nose: nose,
+    mouth: mouth
+  });
+
+  localStorage.setItem("selectedAvatar", avatarDetails);
+  console.log("here u go");
+  console.log(avatarDetails);
+
+  // Construct the URL with query parameters
+  var url = 'result.html';
+  url += '?eyes=' + encodeURIComponent(eyes);
+  url += '&ears=' + encodeURIComponent(ears);
+  url += '&nose=' + encodeURIComponent(nose);
+  url += '&mouth=' + encodeURIComponent(mouth);
+
+  // Redirect to the result page
+  window.location.href = url;
+}
+
 
  // Add .carousel2-bounce-enter class to the container element of carousel 2
 $("#carousel2").addClass("carousel2-bounce-enter");

@@ -48,3 +48,22 @@ function redirectToQuiz() {
   }
   
 
+  function updateAvatarFromLocalStorage() {
+    // Retrieve the selected avatar details from local storage
+    var storedAvatarDetails = localStorage.getItem("selectedAvatar");
+    if (storedAvatarDetails) {
+      var avatar = JSON.parse(storedAvatarDetails);
+  
+      // Update the avatar display
+      $('#eyes-image').attr('src', avatar.eyes);
+      $('#ears-image').attr('src', avatar.ears);
+      $('#nose-image').attr('src', avatar.nose);
+      $('#mouth-image').attr('src', avatar.mouth);
+    }
+  }
+  
+  // Call the function when the page loads
+  $(document).ready(function() {
+    updateAvatarFromLocalStorage();
+  });
+  
