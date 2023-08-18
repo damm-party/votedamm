@@ -106,7 +106,6 @@ header {
   align-items: center; /* Center items vertically */
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow-x: auto; /* Enable horizontal scrolling */
 }
 #carousel1 {
   display: flex;
@@ -119,7 +118,7 @@ header {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  overflow-x: auto;
+  //overflow-x: auto;
   height: 8vh;
 }
 
@@ -134,10 +133,12 @@ header {
   background-color: #FAFAFA;
   border-radius: 10px;
 }
+/*
 .carousel-item.selected {
-  border: 2px solid #007BFF; /* Add a border to indicate selection */
-  background-color: #E0E0E0; /* Change background color for selected item */
+  border: 2px solid #007BFF; 
+  background-color: #E0E0E0; 
 }
+*/
 
 .carousel-item:not(:first-child) {
   border-left: 1px solid white;
@@ -158,17 +159,27 @@ header {
   border-radius: 20px;
   box-shadow: none;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  //display: inline-flex;
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
   margin: 0 auto;
   height: 7vh;
   //width: 100vw; /* Adjust the width to a responsive value */
+  /* Hide scrollbars for Webkit browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+.carousel-container::-webkit-scrollbar {
+  width: 0; /* Hide horizontal scrollbar for Webkit browsers */
+  height: 0; /* Hide vertical scrollbar for Webkit browsers */
 }
 
+
 .carousel2 .carousel-item {
-  width: auto;
+  width: auto; //use to be auto
   height: 100%;
   display: flex;
   justify-content: center;
@@ -181,15 +192,6 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-#carousel2 .carousel-container {
-  display: flex; /* Use flexbox to center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  white-space: nowrap;
-  width: 100%;
-  height: 100%;
-}
 .carousel-item img {
   max-width: 100%;
   max-height: 100%;
@@ -197,7 +199,16 @@ header {
   width: auto;
   height: auto;
 }
-
+/*
+#carousel2 .carousel-container {
+  display: flex; 
+  align-items: center; 
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
+*
 /*
 .carousel2-bounce-enter {
   animation-name: carousel2BounceEnter;
