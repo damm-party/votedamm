@@ -47,6 +47,9 @@ $(document).ready(function() {
         // Automatically select the first item of carousel 1 for gear option
         if (type === "gear"){
             $(".carousel-item:first-child").click();
+          } else if (type === "self") {
+            $(".carousel-item:first-child").click();
+  
         }
 
     }
@@ -57,7 +60,7 @@ $(document).ready(function() {
      var carousel2DataNum = {
         "assets/icons/self/eyes/eyes1.png": 6,
         "assets/icons/self/nose/nose1.png": 3,
-        "assets/icons/self/ears/ears1.png": 10,
+        "assets/icons/self/ears/ears1.png": 6,
         "assets/icons/self/mouth/mouth1.png": 4,
         "assets/icons/gear/clothes/clothes1.png":3
       };
