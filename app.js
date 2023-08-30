@@ -77,7 +77,7 @@ $(document).ready(function() {
         var numItems = carousel2DataNum[selectedItem] || 0;
       
         // Add items to carousel2
-        for (var i = 0; i <= numItems; i++) {
+        for (var i = 1; i <= numItems; i++) {
           var item = selectedItem.replace("1.png", i + ".png");
           var carouselItem = $("<div class='carousel-item'></div>");
           var image = $("<img>").attr("src", item);
