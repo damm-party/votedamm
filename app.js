@@ -23,7 +23,7 @@ $(document).ready(function() {
     // Dictionary to map carousel 1 items based on type
     var carousel1Data = {
       self: ["eyes", "nose", "ears", "mouth"],
-      gear: ["clothes", "shoes"]
+      gear: ["balls", "glasses", "hat", "hold", "hp"]
     };
   
    // Function to update carousel 1 based on the type (self or gear)
@@ -58,11 +58,16 @@ $(document).ready(function() {
      updateCarousel1("self");
   
      var carousel2DataNum = {
-        "assets/icons/self/eyes/eyes1.png": 6,
+        "assets/icons/self/eyes/eyes1.png": 16,
         "assets/icons/self/nose/nose1.png": 3,
         "assets/icons/self/ears/ears1.png": 12,
-        "assets/icons/self/mouth/mouth1.png": 4,
-        "assets/icons/gear/clothes/clothes1.png":3
+        "assets/icons/self/mouth/mouth1.png": 13,
+        "assets/icons/gear/clothes/clothes1.png":3,
+        "assets/icons/gear/balls/balls1.png":3,
+        "assets/icons/gear/glasses/glasses1.png":2,
+        "assets/icons/gear/hat/hat1.png":2,
+        "assets/icons/gear/hold/hold1.png":2,
+        "assets/icons/gear/hp/hp1.png":5
       };
       
       function updateCarousel2(selectedItem) {
@@ -108,10 +113,22 @@ $(document).ready(function() {
         } else if (selectedItem.includes("/mouth/")) {
           altToUpdate = "mouth";
         }
-          else if (selectedItem.includes("/clothes/")) {
-          altToUpdate = "clothes";
+          else if (selectedItem.includes("/balls/")) {
+          altToUpdate = "balls";
         }
-        
+          else if (selectedItem.includes("/glasses/")) {
+            altToUpdate = "glasses";
+        }
+          else if (selectedItem.includes("/hat/")) {
+            altToUpdate = "hat";
+        }
+          else if (selectedItem.includes("/hold/")) {
+            altToUpdate = "hold";
+        }
+          else if (selectedItem.includes("/hp/")) {
+            altToUpdate = "hp";
+        }
+      
         imageToUpdate.each(function() {
           var currentAlt = $(this).attr("alt");
           if (currentAlt === altToUpdate) {
