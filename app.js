@@ -22,7 +22,7 @@ $(document).ready(function() {
   
     // Dictionary to map carousel 1 items based on type
     var carousel1Data = {
-      self: ["eyes", "nose", "ears", "mouth"],
+      self: ["body","eyes","mouth"],
       gear: ["balls", "glasses", "hat", "hold", "hp"]
     };
   
@@ -58,14 +58,13 @@ $(document).ready(function() {
      updateCarousel1("self");
   
      var carousel2DataNum = {
+        "assets/icons/self/body/body1.png":8,
         "assets/icons/self/eyes/eyes1.png": 16,
-        "assets/icons/self/nose/nose1.png": 3,
-        "assets/icons/self/ears/ears1.png": 12,
         "assets/icons/self/mouth/mouth1.png": 13,
-        "assets/icons/gear/clothes/clothes1.png":3,
+        //gear below
         "assets/icons/gear/balls/balls1.png":3,
         "assets/icons/gear/glasses/glasses1.png":2,
-        "assets/icons/gear/hat/hat1.png":2,
+        "assets/icons/gear/hat/hat1.png":10,
         "assets/icons/gear/hold/hold1.png":2,
         "assets/icons/gear/hp/hp1.png":5
       };
@@ -104,15 +103,14 @@ $(document).ready(function() {
         var imageToUpdate = $(".avatar-display .avatar-image");
         var altToUpdate = "";
         
-        if (selectedItem.includes("/eyes/")) {
+        if (selectedItem.includes("/body/")) {
+          altToUpdate = "body";
+        } else if (selectedItem.includes("/eyes/")) {
           altToUpdate = "eyes";
-        } else if (selectedItem.includes("/ears/")) {
-          altToUpdate = "ears";
-        } else if (selectedItem.includes("/nose/")) {
-          altToUpdate = "nose";
         } else if (selectedItem.includes("/mouth/")) {
           altToUpdate = "mouth";
         }
+        //gear
           else if (selectedItem.includes("/balls/")) {
           altToUpdate = "balls";
         }
@@ -160,19 +158,32 @@ $(document).ready(function() {
 
   /*RESULT PAGE JAVAJAVAJAVA*/
   /*RESULT PAGE JAVAJAVAJAVA*/
+  /*
+  self: ["body","eyes","mouth"],
+      gear: ["balls", "glasses", "hat", "hold", "hp"]
+      */
 function redirectToResultPage() {
   // Get the selected items
+  var body = $('#body-image').attr('src');
   var eyes = $('#eyes-image').attr('src');
-  var ears = $('#ears-image').attr('src');
-  var nose = $('#nose-image').attr('src');
   var mouth = $('#mouth-image').attr('src');
+  //gear
+  var balls = $('#balls-image').attr('src');
+  var glasses = $('#glasses-image').attr('src');
+  var hat = $('#hat-image').attr('src');
+  var hold = $('#hold-image').attr('src');
+  var hp = $('#hp-image').attr('src');
 
   // Store the selected avatar details in local storage
   var avatarDetails = JSON.stringify({
+    body: body,
     eyes: eyes,
-    ears: ears,
-    nose: nose,
-    mouth: mouth
+    mouth: mouth,
+    balls: balls,
+    glasses: glasses,
+    hat: hat,
+    hold: hold,
+    hp: hp
   });
 
   localStorage.setItem("selectedAvatar", avatarDetails);
@@ -180,16 +191,26 @@ function redirectToResultPage() {
   console.log(avatarDetails);
 
   // Construct the URL with query parameters
-  var url = 'result.html';
-  url += '?eyes=' + encodeURIComponent(eyes);
-  url += '&ears=' + encodeURIComponent(ears);
-  url += '&nose=' + encodeURIComponent(nose);
-  url += '&mouth=' + encodeURIComponent(mouth);
-
+  /*
+  self: ["body","eyes","mouth"],
+      gear: ["balls", "glasses", "hat", "hold", "hp"]
+      */
+      var url = 'result.html';
+      url += '?body=' + encodeURIComponent(body);
+      url += '&eyes=' + encodeURIComponent(eyes);
+      url += '&mouth=' + encodeURIComponent(mouth);
+      //gears
+      url += '&balls=' + encodeURIComponent(balls);
+      url += '&glasses=' + encodeURIComponent(glasses);
+      url += '&hat=' + encodeURIComponent(hat);
+      url += '&hold=' + encodeURIComponent(hold);
+      url += '&hp=' + encodeURIComponent(hp);
+      
+  
   // Redirect to the result page
   window.location.href = url;
 }
 
 
  // Add .carousel2-bounce-enter class to the container element of carousel 2
-$("#carousel2").addClass("carousel2-bounce-enter");
+//$("#carousel2").addClass("carousel2-bounce-enter");

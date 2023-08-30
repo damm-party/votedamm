@@ -172,6 +172,21 @@ header {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
+
+*/
+/* For phones */
+@media (max-width: 600px) {
+    .carousel2 {
+        width: 90vw;
+    }
+}
+
+/* For computers */
+@media (min-width: 601px) {
+    .carousel2 {
+        width: 90vw;
+    }
+}
 .carousel-container::-webkit-scrollbar {
   width: 0; /* Hide horizontal scrollbar for Webkit browsers */
   height: 0; /* Hide vertical scrollbar for Webkit browsers */

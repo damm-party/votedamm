@@ -7,14 +7,38 @@ function updateAvatarFromQueryParams() {
   var storedAvatarDetails = localStorage.getItem("selectedAvatar");
   if (storedAvatarDetails) {
     var avatar = JSON.parse(storedAvatarDetails);
-
+    /*
+  self: ["body","eyes","mouth"],
+      gear: ["balls", "glasses", "hat", "hold", "hp"]
+      */
     // Update the avatar display
+    $('#body-image').attr('src', avatar.body);
     $('#eyes-image').attr('src', avatar.eyes);
-    $('#ears-image').attr('src', avatar.ears);
-    $('#nose-image').attr('src', avatar.nose);
     $('#mouth-image').attr('src', avatar.mouth);
+    $('#balls-image').attr('src', avatar.balls);
+    $('#glasses-image').attr('src', avatar.glasses);
+    $('#hat-image').attr('src', avatar.hat);
+    $('#hold-image').attr('src', avatar.hold);
+    $('#hp-image').attr('src', avatar.hp);
+
   }
 }
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  updateAvatarFromQueryParams();
+});
+
+function redirectToHomePage() {
+  window.location.href = 'index.html';
+  console.log("redirecting to index.html");
+}
+
+function redirectToQuizzPage() {
+  window.location.href = 'quiz.html';
+  console.log("redirecting to quiz.html");
+}
+
 
 
 /*
@@ -38,17 +62,3 @@ function updateAvatarFromQueryParams() {
     $('#mouth-image').attr('src', mouth);
 }
 */
-
-window.addEventListener('DOMContentLoaded', function() {
-  updateAvatarFromQueryParams();
-});
-
-function redirectToHomePage() {
-  window.location.href = 'index.html';
-  console.log("redirecting to index.html");
-}
-
-function redirectToQuizzPage() {
-  window.location.href = 'quiz.html';
-  console.log("redirecting to quiz.html");
-}
