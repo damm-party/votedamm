@@ -38,14 +38,35 @@ p.description {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
 
-    /* Adjust the media query for iPad-sized devices */
+    /* Adjust the media query for iPad-sized devices 
     @media (max-width: 1024px) {
-        width: 90vw; /* Adjust the value based on your needs */
-        max-width: 100vw; /* Adjust the value based on your needs */
+        width: 90vw; 
+        max-width: 100vw; 
     }
     @media (max-width: 767px) {
-        width: 85vw; /* Adjust the value based on your needs */
-        max-width: 90vw; /* Adjust the value based on your needs */
+        width: 85vw; 
+        max-width: 90vw;
+    }
+    */
+}
+
+/* For phones */
+@media (max-width: 600px) {
+    .rectangle {
+        width: 85vw;
+    }
+}
+
+/* For computers */
+@media (min-width: 601px) {
+    .rectangle {
+        width: 85vw;
+    }
+}
+@media (max-width: 767px) {
+    .rectangle{
+        width: 85vw;
+        max-width: 90vw;
     }
 }
 
