@@ -1,24 +1,3 @@
-/*
-var myQuestions = [
-  {
-  question: "When faced with a challenging situation, how do you typically respond?",
-    choices: [
-      { option: "Remain calm and composed, seeking a solution", keyTrait: "serenitySeeker" },
-      { option: "Crack jokes to lighten the mood and reduce tension", keyTrait: "timeWarpDancer" },
-      { option: "Show empathy and offer support to those involved", keyTrait: "wanderlustVoyager" },
-    ],
-  },
-  {
-    question: "Which type of activity do you find most appealing?",
-    choices: [
-      { option: "Engaging in peaceful and meditative practices", keyTrait: "laughterAlchemist" },
-      { option: "Dancing or performing in front of others", keyTrait: "masterStoryweaver" },
-      { option: "Embarking on adventures and exploring new places", keyTrait: "whimsicalDreamer" },
-    ],
-  },
-
-];
-*/
 
 var myQuestions = [
   {
@@ -30,7 +9,7 @@ var myQuestions = [
     ],
   },
   {
-    question: "Which type of activity do you find most appealing?",
+    question: "Choose an activity!",
     choices: [
       { option: "Engaging in peaceful and meditative practices", keyTrait: "laughterAlchemist" },
       { option: "Dancing or performing in front of others", keyTrait: "masterStoryweaver" },
@@ -38,7 +17,7 @@ var myQuestions = [
     ],
   },
   {
-    question: "How do you naturally express your joy and happiness?",
+    question: "How do you naturally express happiness?",
     choices: [
       { option: "With a serene and contented smile", keyTrait: "empathyOracle" },
       { option: "Through laughter and contagious excitement", keyTrait: "culinaryFusionist" },
@@ -46,7 +25,7 @@ var myQuestions = [
     ],
   },
   {
-    question: "In group settings, what role do you usually take on?",
+    question: "Your role in the friend group:",
     choices: [
       { option: "The calming and reassuring presence", keyTrait: "digitalMarvel" },
       { option: "The entertainer, making everyone laugh", keyTrait: "whirlwindMentor" },
@@ -55,15 +34,15 @@ var myQuestions = [
   },
   
   {
-    question: "Which activity brings you the most satisfaction?",
+    question: "Which activity brings you the most joy?",
     choices: [
-      { option: "Weaving stories and captivating listeners", keyTrait: "mindfulInnovator" },
+      { option: "Telling stories and flirting with listeners", keyTrait: "mindfulInnovator" },
       { option: "Creating art or engaging in imaginative play", keyTrait: "nighttimeMaestro" },
       { option: "Blending unique flavors in the kitchen", keyTrait: "curiosityCartographer" },
     ],
   },
   {
-    question: "What's your favorite way to unwind and relax?",
+    question: "What's your favorite way to relax?",
     choices: [
       { option: "Spending quiet time in nature or a peaceful place", keyTrait: "serendipityConjurer" },
       { option: "Dancing to your favorite music or attending parties", keyTrait: "euphoricHarmonizer" },
@@ -80,7 +59,7 @@ var myQuestions = [
     ],
   },
   {
-    question: "If you had a superpower, which would you choose?",
+    question: "You have to choose a superpower...",
     choices: [
       { option: "The ability to bring peace and serenity to any situation", keyTrait: "adrenalineVirtuoso" },
       { option: "The power to entertain and make people laugh", keyTrait: "gracefulDynamo" },
@@ -88,15 +67,15 @@ var myQuestions = [
     ],
   },
   {
-    question: "What type of books or movies do you enjoy the most?",
+    question: "Favorite type of books/movie",
     choices: [
-      { option: "Thought-provoking and philosophical stories", keyTrait: "mindfulInnovator" },
+      { option: "Philosophical/Historical stories", keyTrait: "mindfulInnovator" },
       { option: "Comedies and light-hearted entertainment", keyTrait: "digitalMarvel" },
       { option: "Adventure and exploration-themed tales", keyTrait: "whirlwindMentor" },
     ],
   },
   {
-    question: "How do you prefer to show appreciation to others?",
+    question: "How do you prefer to show appreciation?",
     choices: [
       { option: "Expressing heartfelt gratitude and kindness", keyTrait: "euphoricHarmonizer" },
       { option: "Making them laugh or smile with a gesture", keyTrait: "imaginationArchitect" },

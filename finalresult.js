@@ -10,7 +10,7 @@ const characteristicDescriptions = {
     "Galaxy Gazer": "With your telescope always at the ready, you're the stargazing expert of your group. You take others on cosmic journeys, introducing them to the wonders of the universe.",
     "Digital Marvel": "You're a tech-savvy genius, effortlessly navigating the digital realm. From coding to designing, you're the go-to person for any tech-related conundrum.",
     "Whirlwind Mentor": "You have an uncanny ability to inspire and motivate others. Your mentoring skills are like a whirlwind, propelling people towards their goals with incredible enthusiasm.",
-    "Artistic Alchemist": "You transform ordinary materials into stunning works of art, making the world around you a canvas for your creativity. Your artistry knows no bounds, from paintings to sculptures and everything in between.",
+    "Artistic Alchemist": "You transform ordinary materials into stunning works of art, making the world around you a canvas for your creativity. Your artistry knows no bounds",
     "Mindful Innovator": "You blend innovation with mindfulness, creating products and solutions that not only push boundaries but also foster a sense of mindfulness and well-being.",
     "Nighttime Maestro": "When the sun sets, you come alive, orchestrating unforgettable nighttime experiences. Whether it's throwing themed parties or leading midnight adventures, you're the master of nocturnal fun.",
     "Curiosity Cartographer": "You're on a quest to explore the unknown and map out uncharted territories of knowledge. Your insatiable curiosity is an inspiration to others to seek answers beyond the horizon.",
@@ -20,8 +20,8 @@ const characteristicDescriptions = {
     "Timeless Fashionista": "Your fashion sense transcends trends, creating a unique style that stands the test of time. You're a trendsetter with an eye for classic elegance.",
     "Imagination Architect": "You build fantastical worlds and universes with the power of your imagination. From intricate fantasy realms to futuristic cities, your mind's creations are awe-inspiring.",
     "Peak Performer": "The epitome of perfect athleticism, excelling in strength, agility, and endurance. Unwavering dedication to training, constantly setting new personal bests, and dominating every sport with superhuman abilities.",
-    "Adrenaline Virtuoso": "The undisputed virtuoso of extreme sports and daring feats. Fearlessly embracing the thrill of the unknown with lightning-fast reflexes and unyielding determination. Transforms every challenge into a playground for extraordinary talents.",
-    "Graceful Dynamo": "Even Mr. Tillo calls you a dynamo with mesmerizing fluidity and precision. Effortlessly gliding across fields, courts, or stages, leaving spectators entranced by your elegance and control. An inspiration to aspiring athletes with your athletic artistry.",
+    "Adrenaline Virtuoso": "The undisputed virtuoso of extreme sports and daring feats. Fearlessly embracing the thrill of the unknown with lightning-fast reflexes and unyielding determination.",
+    "Graceful Dynamo": "Even Mr. Tillo calls you a dynamo with mesmerizing fluidity and precision. Effortlessly gliding across fields, courts, or stages, leaving spectators entranced by your elegance and control",
   };
   
 
