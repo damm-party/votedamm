@@ -161,7 +161,9 @@ header {
   width: 100vw;
   overflow-x: auto;
   white-space: nowrap;
-  //display: inline-flex;
+  //justify-content: flex-start; /* Start from the beginning of the container */
+  align-items: center;
+  display: flex;
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -173,8 +175,18 @@ header {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer/Edge */
 }
+.center-align {
+  justify-content: center;
+}
 
-*/
+.flex-start-align {
+  justify-content: flex-start;
+}
+/* Adjust the alignment based on total width */
+#carousel2:not(.center-align) {
+  justify-content: flex-start;
+}
+
 /* For phones */
 @media (max-width: 600px) {
     .carousel2 {

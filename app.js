@@ -62,11 +62,11 @@ $(document).ready(function() {
         "assets/icons/self/eyes/eyes1.png": 16,
         "assets/icons/self/mouth/mouth1.png": 13,
         //gear below
-        "assets/icons/gear/balls/balls1.png":3,
-        "assets/icons/gear/glasses/glasses1.png":2,
-        "assets/icons/gear/hat/hat1.png":10,
-        "assets/icons/gear/hold/hold1.png":2,
-        "assets/icons/gear/hp/hp1.png":5
+        "assets/icons/gear/balls/balls1.png":4,
+        "assets/icons/gear/glasses/glasses1.png":3,
+        "assets/icons/gear/hat/hat1.png":11,
+        "assets/icons/gear/hold/hold1.png":3,
+        "assets/icons/gear/hp/hp1.png":6
       };
       
       function updateCarousel2(selectedItem) {
