@@ -55,10 +55,14 @@ function redirectToQuiz() {
       var avatar = JSON.parse(storedAvatarDetails);
   
       // Update the avatar display
+      $('#body-image').attr('src', avatar.body);
       $('#eyes-image').attr('src', avatar.eyes);
-      $('#ears-image').attr('src', avatar.ears);
-      $('#nose-image').attr('src', avatar.nose);
       $('#mouth-image').attr('src', avatar.mouth);
+      $('#balls-image').attr('src', avatar.balls);
+      $('#glasses-image').attr('src', avatar.glasses);
+      $('#hat-image').attr('src', avatar.hat);
+      $('#hold-image').attr('src', avatar.hold);
+      $('#hp-image').attr('src', avatar.hp);
     }
   }
   
